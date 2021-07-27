@@ -3,6 +3,8 @@ package com.cdsnascimento.workshopmongo.damain;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.cdsnascimento.workshopmongo.dto.AuthorDTO;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,12 +18,12 @@ public class Post implements Serializable{
   private Date date;
   private String post;
   private String body;
-  private User author;
+  private AuthorDTO author;
 
   public Post() {
   }
 
-  public Post(String id, Date date, String post, String body, User author) {
+  public Post(String id, Date date, String post, String body, AuthorDTO author) {
     this.id = id;
     this.date = date;
     this.post = post;
@@ -61,11 +63,11 @@ public class Post implements Serializable{
     this.body = body;
   }
 
-  public User getAuthor() {
+  public AuthorDTO getAuthor() {
     return author;
   }
 
-  public void setAuthor(User author) {
+  public void setAuthor(AuthorDTO author) {
     this.author = author;
   }
 
