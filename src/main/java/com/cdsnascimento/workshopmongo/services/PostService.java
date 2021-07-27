@@ -3,7 +3,6 @@ package com.cdsnascimento.workshopmongo.services;
 import java.util.Optional;
 
 import com.cdsnascimento.workshopmongo.damain.Post;
-import com.cdsnascimento.workshopmongo.damain.User;
 import com.cdsnascimento.workshopmongo.repository.PostRepository;
 import com.cdsnascimento.workshopmongo.services.exception.ObjectNotFoundException;
 
